@@ -10,6 +10,28 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <script src="https://kit.fontawesome.com/7645ed552a.js" crossorigin="anonymous"></script>
+    <style>
+        .contrib-column {
+            color: white;
+        }
+
+        .contrib-number {
+            color: var(--yellow);
+        }
+
+        :root {
+            --color-calendar-graph-day-bg: #dddbdb;
+            --color-calendar-graph-day-L1-bg: var(--yellow);
+            --color-calendar-graph-day-L2-bg: #e9cf09;
+            --color-calendar-graph-day-L3-bg: #edd72e;
+            --color-calendar-graph-day-L4-bg: #e6d377;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +48,7 @@
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
-                <li><a href="#education">education</a></li>
+                <li><a href="#education">skills</a></li>
                 <li><a href="#portfolio">projects</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
@@ -40,10 +62,21 @@
 
         <h3>HI THERE !</h3>
         <h1>I'M <span>Tayyab Ali</span></h1>
-        <p>Quick learner and an JAVA backend Developer. Looking forward to applying and enhancing my skills and knowledge as a developer.
+        <p>Quick learner and an JAVA backend Developer. Looking forward to applying and enhancing my skills and
+            knowledge as a developer.
         </p>
-        <a href="https://drive.google.com/file/d/1wfNlmNkm8X5u3DQCauP4EDSKpha63Kbg/view?usp=sharing" target="_blank"><button class="btn">My resume<i class="fas fa-user"></i></button></a>
+        <a href="https://drive.google.com/file/d/1wfNlmNkm8X5u3DQCauP4EDSKpha63Kbg/view?usp=sharing"
+            target="_blank"><button class="btn">My resume<i class="fas fa-user"></i></button></a>
         <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+        <br>
+        <br>
+        <h1 class="heading"> github <span>calender</span> </h1>
+        <br>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
 
     </section>
 
@@ -62,71 +95,147 @@
                 <h3> <span> language : </span> Hindi, English </h3>
             </div>
 
-            <div class="counter">
 
-                <div class="box">
-                    <span>50+</span>
-                    <h3>frontEnd and BackEnd Assignments completed</h3>
-                </div>
-                <div class="box">
-                    <span>DSA</span>
-                    <h3>Data Structure & Algorithm</h3>
-                </div>
-                <div class="box">
-                    <span>JAVA</span>
-                </div>
-                <div class="box">
-                    <span>MySQL</span>
-                </div>
-                <div class="box">
-                    <span>HTML</span>
-                </div>
-                <div class="box">
-                    <span>CSS</span>
-                </div>
-                <div class="box">
-                    <span>JavaScript</span>
+
+            <div class="education" id="education">
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>feb 2022 - Ongoing</span>
+                        <h3>Masai School</h3>
+                        <p>JAVA Backend Development</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>aug 2017 - sep 2020</span>
+                        <h3>Dr. YS. Parmar College</h3>
+                        <p>BSc Mathematics</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>jul 2019 - jul 2020</span>
+                        <h3>NIELIT</h3>
+                        <p>Diploma in Computer Aplication</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>apr 2015 - apr 2017</span>
+                        <h3>A.V.N Sr. Sec. School</h3>
+                        <p>Higher Secondary Education</p>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
+        
 
     </section>
 
 
     <section class="education" id="education">
 
-        <h1 class="heading"> my <span>education</span> </h1>
+        <h1 class="heading"> my <span>Skills</span> </h1>
+        <br>
+        <h1 class="heading heading2"> tech <span>Skills</span> </h1>
 
         <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <!-- <span>feb 2022 - Ongoing</span> -->
+                <h3>100+</h3>
+                <p>FrontEnd and BackEnd Assignment Completed</p>
+                <!-- <p>JAVA Backend Development</p> -->
+            </div>
+
+
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
-                <span>feb 2022 - Ongoing</span>
-                <h3>Masai School</h3>
-                <p>JAVA Backend Development</p>
+                <!-- <span>jul 2019 - jul 2020</span> -->
+                <h3>JAVA</h3>
+                <!-- <p>Diploma in Computer Aplication</p> -->
             </div>
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
-                <span>aug 2017 - sep 2020</span>
-                <h3>Dr. YS. Parmar College</h3>
-                <p>BSc Mathematics</p>
+                <!-- <span>apr 2015 - apr 2017</span> -->
+                <h3>MySQL</h3>
+                <!-- <p>Higher Secondary Education</p> -->
             </div>
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
-                <span>jul 2019 - jul 2020</span>
-                <h3>NIELIT</h3>
-                <p>Diploma in Computer Aplication</p>
+                <!-- <span>aug 2017 - sep 2020</span> -->
+                <h3>DSA</h3>
+                <!-- <p>BSc Mathematics</p> -->
+                <p>Data Structure And Algorithm</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>SpringBoot</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Hibernate</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Maven</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>CSS</h3>
+            </div>
+
+        </div>
+        <br>
+        <h1 class="heading heading2"> Soft<span>Skills</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <!-- <span>feb 2022 - Ongoing</span> -->
+                <!-- <h3>100+</h3> -->
+                <h3>Time Management</h3>
+                <!-- <p>JAVA Backend Development</p> -->
+            </div>
+
+
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <!-- <span>jul 2019 - jul 2020</span> -->
+                <h3>Problem Solving</h3>
+                <!-- <p>Diploma in Computer Aplication</p> -->
             </div>
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
-                <span>apr 2015 - apr 2017</span>
-                <h3>A.V.N Sr. Sec. School</h3>
-                <p>Higher Secondary Education</p>
+                <!-- <span>apr 2015 - apr 2017</span> -->
+                <h3>Remote Collaboration</h3>
+                <!-- <p>Higher Secondary Education</p> -->
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <!-- <span>aug 2017 - sep 2020</span> -->
+                <h3>Adaptability</h3>
+                <!-- <p>BSc Mathematics</p> -->
             </div>
 
         </div>
@@ -142,17 +251,70 @@
             <div class="box">
                 <a href="https://fraazoclone.netlify.app/" target="_blank">
                     <img src="images/p1.jpg" alt="">
+                    <div class="fullcap">
+                        <button class="xyz">Click for Deployed Link</button><br><br>
+                        <button class="abc"><a href="https://github.com/shoto2000/ProjectFraazo">Source
+                                Code</a></button>
+                    </div>
                 </a>
+                <div class="textpro" style="color: white;">
+                    <h1>Collaborative project that we have cloned for online Fruits, Vegetables & other Groceries
+                        delivery app fraazo.com. Fraazo brings a wide range of farm fresh fruits, vegetables and dairy
+                        products to you, all in just a click.</h1>
+                    <br>
+                    <br>
+                    <div class="techh">
+                        <div><i class="fa-brands fa-html5"></i>
+                            HTML</div>
+                        <div>
+                            <i class="fa-brands fa-node-js"></i>
+                            JS
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            CSS
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="box">
                 <a href="https://indiamart-clone-masai.netlify.app/" target="_blank">
                     <img src="images/p2.jpg" alt="">
+                    <div class="fullcap">
+                        <button class="xyz">Click for Deployed Link</button><br><br>
+                        <button class="abc"><a href="https://github.com/shabh2412/Indiamart-Clone">Source
+                                Code</a></button>
+                    </div>
                 </a>
+                <div class="textpro" style="color: white;">
+                    <h1>Collaborative E-Commerce project that we have cloned for buying and selling of goods from
+                        India's largest online B2B marketplace, connecting buyers with suppliers. With 60% market share
+                        of the online B2B Classified space in India</h1>
+                    <br>
+                    <br>
+                    <div class="techh">
+                        <div><i class="fa-brands fa-html5"></i>
+                            HTML</div>
+                        <div>
+                            <i class="fa-brands fa-node-js"></i>
+                            JS
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            CSS
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-bootstrap"></i>
+                            BootStrap
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
 
     </section>
+
 
     <section class="contact" id="contact">
 
@@ -173,15 +335,26 @@
                 <br>
 
                 <div id="logo">
-                    <a class="logoAdd" href="https://github.com/shoto2000" target="_blank"><ion-icon name="logo-github"></ion-icon></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a class="logoAdd" href="https://www.linkedin.com/in/tayyab-ali-5858921b3/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a class="logoAdd" href="https://twitter.com/___shoto___" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a class="logoAdd" href="mailto: tayyabsyed2000@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></ion-icon></a>
+                    <a class="logoAdd" href="https://github.com/shoto2000" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="logoAdd" href="https://www.linkedin.com/in/tayyab-ali-5858921b3/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="logoAdd" href="https://twitter.com/___shoto___" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="logoAdd" href="mailto: tayyabsyed2000@gmail.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        </ion-icon>
+                    </a>
                 </div>
 
             </div>
 
         </div>
+
+
 
     </section>
 
@@ -196,5 +369,18 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+<script>
+    GitHubCalendar(".calendar", "shoto2000");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "shoto2000", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "shoto2000", {
+        proxy(username) {
+            return fetch(`https://your-proxy.com/github?user=${username}`)
+        }
+    }).then(r => r.text())
+</script>
 
 </html>

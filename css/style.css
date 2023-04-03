@@ -310,7 +310,7 @@ header .navbar ul li a:hover {
     /* overflow: hidden; */
     cursor: pointer;
     position: relative;
-    margin-bottom: 250px;
+    margin-bottom: 300px;
 }
 
 .portfolio .box-container .box img {
@@ -342,7 +342,10 @@ header .navbar ul li a:hover {
 }
 
 .techh{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 20px;
+    text-align: center;
     justify-content: space-around;
 }
 
@@ -351,6 +354,7 @@ header .navbar ul li a:hover {
     font-size: 15px;
     text-align: center;
     color: var(--yellow);
+    margin-bottom: 20px;
 }
 
 .portfolio .box-container .box .fullcap .abc a{

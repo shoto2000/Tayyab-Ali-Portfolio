@@ -252,6 +252,7 @@ header .navbar ul li a:hover {
 
 .education .box-container .box {
     width: 23rem;
+    height: 12rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
@@ -295,7 +296,7 @@ header .navbar ul li a:hover {
 .skill .box-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 1rem 0;
     padding-left: 3rem;
@@ -303,10 +304,12 @@ header .navbar ul li a:hover {
 
 .skill .box-container .box {
     width: 23rem;
-    margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid #fff;
-    position: relative;
+    height: 23rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+    text-align: center;
 }
 
 .skill .box-container .box span {
@@ -330,15 +333,15 @@ header .navbar ul li a:hover {
 }
 
 .skill .box-container .box i {
-    position: absolute;
-    top: -1.5rem;
-    left: -2.5rem;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
+    /* position: absolute; */
+    text-align: center;
+    padding-top: 4.5rem;
+    height: 15rem;
+    width: 100%;
+    border-radius: 10%;
     line-height: 5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 7rem;
     color: #fff;
     background: var(--yellow);
 }
@@ -361,8 +364,9 @@ header .navbar ul li a:hover {
 
 .portfolio .box-container .inbox {
     height: 63rem;
-    border: 1px solid white;
-    margin: 5px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+    /* border: 2px solid white; */
+    margin: 9px;
 }
 
 .portfolio .box-container .inbox .box {
@@ -389,21 +393,32 @@ header .navbar ul li a:hover {
 
 .portfolio .box-container .inbox .box .fullcap {
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* grid-template-rows: auto; */
-    /* grid-column-gap: 10px; */
-    /* align-items: center; */
     justify-content: space-around;
 }
 
 .portfolio .box-container .inbox .box .fullcap .abc {
     background-color: var(--yellow);
     border-radius: 5px;
-    height: 50px;
-    font-size: 20px;
-    padding: 5px 7px;
+    height: 40px;
+    font-size: 17px;
+    padding: 5px 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     color: white;
+}
+
+
+.techh div{
+    /* margin: 20px; */
+    /* border: 1px solid white; */
+    /* padding: 10px; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.portfolio .techh i{
+    font-size: 40px;
+    margin-bottom: 10px;
+
 }
 
 .fa-brands {
@@ -424,11 +439,6 @@ header .navbar ul li a:hover {
     text-align: center;
     color: var(--yellow);
     margin-bottom: 20px;
-}
-
-.portfolio .box-container .box .fullcap .abc a {
-    color: white;
-    font-size: x-large;
 }
 
 .portfolio .box-container .box h1 {
@@ -513,10 +523,12 @@ header .navbar ul li a:hover {
 
 
 @media (max-width:1200px) {
+    .calender{
+        width: 80%;
+    }
 
     .portfolio .box-container .inbox {
         height: 63rem;
-        border: 1px solid white;
         margin: 5px;
     }
 
@@ -531,9 +543,11 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width:991px) {
+    .calender{
+        width: 70%;
+    }
     .portfolio .box-container .inbox {
         height: 65rem;
-        border: 1px solid white;
         margin: 5px;
     }
 
@@ -556,6 +570,13 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width:768px) {
+    .about{
+        margin:0;
+        padding:0;
+    }
+    .calender{
+        width: 50%;
+    }
 
     .skill {
         margin-bottom: 300px;
@@ -568,10 +589,12 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width:400px) {
+    .calender{
+        width: 25%;
+    }
 
     .portfolio .box-container .inbox {
         height: 65rem;
-        border: 1px solid white;
         margin: 5px;
     }
 
@@ -600,6 +623,14 @@ header .navbar ul li a:hover {
     }
     .calender{
         width: 60%;
+    }
+    .skill .box-container .box {
+        width: 18rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 10%;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+        text-align: center;
     }
 
 }

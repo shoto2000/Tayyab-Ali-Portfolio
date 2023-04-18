@@ -186,6 +186,10 @@ header .navbar ul li a:hover {
     padding: 1rem 0;
 }
 
+.about {
+    height: auto;
+}
+
 .about .row {
     display: flex;
     align-items: center;
@@ -288,6 +292,57 @@ header .navbar ul li a:hover {
     background: var(--yellow);
 }
 
+.skill .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.skill .box-container .box {
+    width: 23rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.skill .box-container .box span {
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.skill .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.skill .box-container .box p {
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.skill .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+}
+
 .portfolio {
     margin-bottom: auto;
 }
@@ -305,15 +360,15 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .inbox {
-    height: 60rem;
+    height: 63rem;
     border: 1px solid white;
     margin: 5px;
 }
 
 .portfolio .box-container .inbox .box {
-    height:25rem;
+    height: 25rem;
     width: 45rem;
-    margin: 2rem;
+    margin: 1rem;
     /* overflow: hidden; */
     cursor: pointer;
     position: relative;
@@ -333,27 +388,22 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .inbox .box .fullcap {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    align-items: center;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: auto; */
+    /* grid-column-gap: 10px; */
+    /* align-items: center; */
+    justify-content: space-around;
 }
 
 .portfolio .box-container .inbox .box .fullcap .abc {
     background-color: var(--yellow);
     border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
     padding: 5px 7px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     color: white;
-}
-
-
-.portfolio .box-container .inbox .box .fullcap .xyz {
-    background-color: var(--yellow);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-radius: 5px;
-    padding: 5px 7px;
 }
 
 .fa-brands {
@@ -384,39 +434,6 @@ header .navbar ul li a:hover {
 .portfolio .box-container .box h1 {
     margin-top: 30px;
     text-align: center;
-}
-
-.portfolio .box-container .box .fullcap {
-    /* (C1) DIMENSIONS */
-    /* box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    font-size: large; */
-
-    /* (C2) POSITION */
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    padding-top: 30%; */
-
-    /* (C3) COLORS */
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    /* color: white; */
-}
-
-.fullcap {
-    /* visibility: none;
-        opacity: 0;
-        transition: opacity 0.3s; */
-}
-
-.portfolio .box-container .box:hover img {
-    /* transform: scale(1.2); */
-}
-
-.portfolio .box-container .box:hover .fullcap {
-    /* visibility: visible; opacity: 1; */
 }
 
 .contact .row {
@@ -496,6 +513,7 @@ header .navbar ul li a:hover {
 
 
 @media (max-width:1200px) {
+
     .portfolio .box-container .inbox {
         height: 63rem;
         border: 1px solid white;
@@ -539,6 +557,10 @@ header .navbar ul li a:hover {
 
 @media (max-width:768px) {
 
+    .skill {
+        margin-bottom: 300px;
+    }
+
     html {
         font-size: 50%;
     }
@@ -546,6 +568,7 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width:400px) {
+
     .portfolio .box-container .inbox {
         height: 65rem;
         border: 1px solid white;
@@ -564,7 +587,7 @@ header .navbar ul li a:hover {
         width: 100%;
     }
 
-    .education .box-container .box {
+    .skill .box-container .box {
         width: 100%;
     }
 
@@ -574,6 +597,9 @@ header .navbar ul li a:hover {
 
     .contact .row form {
         margin: 3rem 0;
+    }
+    .calender{
+        width: 60%;
     }
 
 }

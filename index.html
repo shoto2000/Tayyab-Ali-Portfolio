@@ -101,10 +101,7 @@
             <br>
             <span>completed</span> my Web Development Course from Masai and ready to Work.
         </p>
-        <a href="https://drive.google.com/file/d/1wfNlmNkm8X5u3DQCauP4EDSKpha63Kbg/view?usp=sharing"
-            download="your_resume.pdf" target="_blank">
-            <button class="btn">My resume<i class="fas fa-user"></i></button>
-        </a>
+        <a><button class = "btn" onclick=downloadAndOpenResume()>My resume<i class="fas fa-user"></i></button></a>
         <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
 
 
@@ -294,7 +291,8 @@
                         <br>
                         <div class="fullcap">
                             <a class="abc" href="https://fraazoselling.netlify.app/" target="_blank">Deployed Link</a>
-                            <a class="abc" href="https://github.com/shoto2000/ProjectFraazo" target="_blank">Source Code</a>
+                            <a class="abc" href="https://github.com/shoto2000/ProjectFraazo" target="_blank">Source
+                                Code</a>
                         </div>
                         <br>
                         <div class="techh">
@@ -323,8 +321,10 @@
                             share of the online B2B Classified space in India</h1>
                         <br>
                         <div class="fullcap">
-                            <a class="abc" href="https://indiamart-clone-masai.netlify.app/" target="_blank">Deployed Link</a>
-                            <a class="abc" href="https://github.com/shabh2412/Indiamart-Clone" target="_blank">Source Code</a>
+                            <a class="abc" href="https://indiamart-clone-masai.netlify.app/" target="_blank">Deployed
+                                Link</a>
+                            <a class="abc" href="https://github.com/shabh2412/Indiamart-Clone" target="_blank">Source
+                                Code</a>
                         </div>
                         <br>
                         <div class="techh">
@@ -347,8 +347,7 @@
                             operations of Covid-19 Application platform with user validation at every step.</h1>
                         <br>
                         <div class="fullcap">
-                            <a class="abc" href="https://github.com/Dhruva8878/Covid_19_webApp"
-                                target="_blank">Source
+                            <a class="abc" href="https://github.com/Dhruva8878/Covid_19_webApp" target="_blank">Source
                                 Code</a>
                         </div>
                         <br>
@@ -459,6 +458,25 @@
     GitHubCalendar(".calendar", "shoto2000", { responsive: true }, function () {
         window.location.reload();
     });
+
+    const downloadAndOpenResume = () => {
+        const fileId = "1wfNlmNkm8X5u3DQCauP4EDSKpha63Kbg";
+        const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+        const outputFilename = "Tayyab_Ali_Resume.pdf";
+        const downloadLink = document.createElement("a");
+        downloadLink.href = downloadUrl;
+        downloadLink.download = outputFilename;
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        setTimeout(() => {
+            viewResume();
+            document.body.removeChild(downloadLink);
+        }, 1000);
+    };
+    const viewResume = () => {
+        const viewUrl = "https://drive.google.com/file/d/1wfNlmNkm8X5u3DQCauP4EDSKpha63Kbg/view?usp=sharing";
+        window.open(viewUrl, "_blank");
+    };
 </script>
 
 </html>

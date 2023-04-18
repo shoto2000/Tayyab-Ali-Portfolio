@@ -77,6 +77,15 @@ section {
     color: #fff;
 }
 
+.heading-title{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 3rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+}
+
 .heading2 {
     text-align: left;
     font-size: 3rem;
@@ -363,10 +372,14 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .inbox {
-    height: 63rem;
+    height: 72rem;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
     /* border: 2px solid white; */
     margin: 9px;
+}
+
+.portfolio .textpro h1 {
+    height: 12rem;
 }
 
 .portfolio .box-container .inbox .box {
@@ -386,39 +399,73 @@ header .navbar ul li a:hover {
     /* object-fit: cover; */
 }
 
-.portfolio .box-container .inbox .box a {
+.inbox .box a {
     text-decoration: none;
     color: white;
 }
 
 .portfolio .box-container .inbox .box .fullcap {
     display: flex;
+    gap: 3px;
     justify-content: space-around;
 }
 
 .portfolio .box-container .inbox .box .fullcap .abc {
+    display: inline-block;
     background-color: var(--yellow);
-    border-radius: 5px;
-    height: 40px;
-    font-size: 17px;
-    padding: 5px 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: 2px  var(--yellow);
     color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.portfolio .box-container .inbox .box .fullcap .abc:hover {
+    background-color: white;
+    color: var(--yellow);
+    border: 2px var(--yellow);
 }
 
 
-.techh div{
-    /* margin: 20px; */
-    /* border: 1px solid white; */
-    /* padding: 10px; */
-    /* align-items: center; */
+.techh div {
     text-align: center;
 }
 
-.portfolio .techh i{
+.portfolio .techh i {
     font-size: 40px;
     margin-bottom: 10px;
 
+}
+
+
+.portfolio .product-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.portfolio .product-container .box{
+    
+    margin: auto;
+    margin-top: 10px;
+}
+
+.portfolio .product-container .box{
+    width: 83%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.portfolio .product-container .box>div{
+    border: 2px solid white;
+}
+
+.portfolio .product-container .box img{
+    width: 100%;
 }
 
 .fa-brands {
@@ -427,7 +474,7 @@ header .navbar ul li a:hover {
 
 .techh {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     margin-bottom: 20px;
     text-align: center;
     justify-content: space-around;
@@ -523,7 +570,7 @@ header .navbar ul li a:hover {
 
 
 @media (max-width:1200px) {
-    .calender{
+    .calender {
         width: 80%;
     }
 
@@ -543,9 +590,13 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width:991px) {
-    .calender{
+    .portfolio .box-container .inbox {
+        height: 78rem;
+    }
+    .calender {
         width: 70%;
     }
+
     .portfolio .box-container .inbox {
         height: 65rem;
         margin: 5px;
@@ -568,13 +619,16 @@ header .navbar ul li a:hover {
     }
 
 }
-
-@media (max-width:768px) {
-    .about{
-        margin:0;
-        padding:0;
+@media (max-width:820px) {
+    .portfolio .box-container .inbox {
+        height: 78rem;
     }
-    .calender{
+    .about {
+        margin: 0;
+        padding: 0;
+    }
+
+    .calender {
         width: 50%;
     }
 
@@ -588,13 +642,39 @@ header .navbar ul li a:hover {
 
 }
 
-@media (max-width:400px) {
-    .calender{
+@media (max-width:768px) {
+    .portfolio .box-container .inbox {
+        height: 78rem;
+    }
+    .about {
+        margin: 0;
+        padding: 0;
+    }
+
+    .calender {
+        width: 50%;
+    }
+
+    .skill {
+        margin-bottom: 300px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width:420px) {
+    .portfolio .box-container .inbox {
+        height: 78rem;
+    }
+    .calender {
         width: 25%;
     }
 
     .portfolio .box-container .inbox {
-        height: 65rem;
+        height: 78rem;
         margin: 5px;
     }
 
@@ -621,9 +701,11 @@ header .navbar ul li a:hover {
     .contact .row form {
         margin: 3rem 0;
     }
-    .calender{
+
+    .calender {
         width: 60%;
     }
+
     .skill .box-container .box {
         width: 18rem;
         margin: 1rem;

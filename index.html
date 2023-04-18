@@ -32,17 +32,34 @@
             --color-calendar-graph-day-L1-bg: #dcc75d;
         }
 
-        .fa-solid.fa-power-off,
-        .fa-sharp.fa-solid.fa-database {
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 30px;
+        .calendar {
+            font-family: Helvetica, arial;
+            border: none;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+            padding: 1rem;
+            border-radius: 6px;
+            min-height: 243px;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .contrib-column {
+            padding: 15px 0;
+            text-align: center;
+            border-left: none;
+            border-top: none;
+            font-size: 11px;
         }
 
         .techh div {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        p span {
+            color: var(--yellow);
         }
     </style>
 </head>
@@ -61,6 +78,7 @@
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
+                <li><a href="#calendar">Github</a></li>
                 <li><a href="#skill">skills</a></li>
                 <li><a href="#portfolio">projects</a></li>
                 <li><a href="#contact">contact</a></li>
@@ -75,8 +93,13 @@
 
         <h3>HI THERE !</h3>
         <h1>I'M <span>Tayyab Ali</span></h1>
-        <p>Quick learner and an JAVA backend Developer. Looking forward to applying and enhancing my skills and
+        <p> <span>Quick</span> learner and an JAVA backend Developer. Looking forward to applying and enhancing my
+            skills and
             knowledge as a developer.
+            <br>
+            <span>Experience</span> of more than 1000+ hours of coding and 600+ hours of Data Structure and Algorithm.
+            <br>
+            <span>completed</span> my Web Development Course from Masai and ready to Work.
         </p>
         <a href="https://drive.google.com/file/d/1wfNlmNkm8X5u3DQCauP4EDSKpha63Kbg/view?usp=sharing"
             download="your_resume.pdf" target="_blank">
@@ -84,14 +107,7 @@
         </a>
         <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
 
-        <br>
-        <br>
-        <h1 class="heading"> github <span>calender</span> </h1>
-        <br>
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-        </div>
+
 
     </section>
 
@@ -150,7 +166,16 @@
             </div>
 
         </div>
-
+        <br>
+        <br>
+        <div id="calendar">
+            <h1 class="heading"> github <span>calender</span> </h1>
+            <br>
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+        </div>
 
     </section>
 
@@ -162,16 +187,6 @@
         <h1 class="heading heading2"> tech <span>Skills</span> </h1>
 
         <div class="box-container">
-            <div class="box">
-                <i class="fa-sharp fa-solid fa-scroll"></i>s
-                <!-- <span>feb 2022 - Ongoing</span> -->
-                <h3>100+</h3>
-                <p>FrontEnd and BackEnd Assignment Completed</p>
-                <!-- <p>JAVA Backend Development</p> -->
-            </div>
-
-
-
             <div class="box">
                 <i class="fa-brands fa-java"></i>
                 <!-- <span>jul 2019 - jul 2020</span> -->
@@ -190,8 +205,6 @@
                 <i class="fa-sharp fa-solid fa-database"></i>
                 <!-- <span>aug 2017 - sep 2020</span> -->
                 <h3>DSA</h3>
-                <!-- <p>BSc Mathematics</p> -->
-                <p>Data Structure And Algorithm</p>
             </div>
             <div class="box">
                 <i class="fa-solid fa-power-off"></i>
@@ -216,6 +229,10 @@
             <div class="box">
                 <i class="fa-brands fa-css3"></i>
                 <h3>CSS</h3>
+            </div>
+            <div class="box">
+                <i class="fa-brands fa-aws"></i>
+                <h3>AWS</h3>
             </div>
 
         </div>
@@ -276,8 +293,8 @@
                             products to you, all in just a click.</h1>
                         <br>
                         <div class="fullcap">
-                            <button class="abc">Deployed Link</button>
-                            <button class="abc" href="https://github.com/shoto2000/ProjectFraazo">Source Code</button>
+                            <a class="abc" href="https://fraazoselling.netlify.app/" target="_blank">Deployed Link</a>
+                            <a class="abc" href="https://github.com/shoto2000/ProjectFraazo" target="_blank">Source Code</a>
                         </div>
                         <br>
                         <div class="techh">
@@ -306,8 +323,8 @@
                             share of the online B2B Classified space in India</h1>
                         <br>
                         <div class="fullcap">
-                            <button class="abc">Deployed Link</button>
-                            <button class="abc" href="https://github.com/shabh2412/Indiamart-Clone">Source Code</button>
+                            <a class="abc" href="https://indiamart-clone-masai.netlify.app/" target="_blank">Deployed Link</a>
+                            <a class="abc" href="https://github.com/shabh2412/Indiamart-Clone" target="_blank">Source Code</a>
                         </div>
                         <br>
                         <div class="techh">
@@ -330,9 +347,9 @@
                             operations of Covid-19 Application platform with user validation at every step.</h1>
                         <br>
                         <div class="fullcap">
-                            <button class="abc" href="https://github.com/Dhruva8878/Covid_19_webApp"
+                            <a class="abc" href="https://github.com/Dhruva8878/Covid_19_webApp"
                                 target="_blank">Source
-                                Code</button>
+                                Code</a>
                         </div>
                         <br>
                         <div class="techh">
@@ -439,14 +456,9 @@
     GitHubCalendar(".calendar", "shoto2000");
 
     // or enable responsive functionality:
-    GitHubCalendar(".calendar", "shoto2000", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "shoto2000", {
-        proxy(username) {
-            return fetch(`https://your-proxy.com/github?user=${username}`)
-        }
-    }).then(r => r.text())
+    GitHubCalendar(".calendar", "shoto2000", { responsive: true }, function () {
+        window.location.reload();
+    });
 </script>
 
 </html>
